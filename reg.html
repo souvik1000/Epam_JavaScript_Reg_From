@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="css\form.css" rel="stylesheet">
+</head>
+<body>
+    <div class="warpper f1">
+        <div class="main">
+            <div class="head">
+				<p>Student Registration Form</p>
+			</div>
+			<div class="form fl">
+                <form onsubmit="return validation()" method="POST">
+				
+                    <p class="name">FIRST NAME* :</p>
+					<p><input type="text" name="fname" placeholder="First Name" class="name-inp" id="fname"></p>
+					<span id="fstname" class="spn"> </span>
+					
+					<p class="name">LAST NAME* :</p>
+					<p><input type="text" name="lname" placeholder="Last Name" class="name-inp" id="lname"></P>
+					<span id="lstname" class="spn"> </span>
+					
+                    <p class="name">EMAIL* :</p>
+					<p><input type="email" name="uid" placeholder="Email" class="name-inp" id="email"></p>
+					<span id="emailId" class="spn"> </span>
+					
+					<p class="name">PHONE* :</P>
+                    <p><input type="text" name="phone" placeholder="Phone" class="name-inp" id="mobile"></p>
+					<span id="phone" class="spn"> </span>
+					
+					<p class="name">PASSWORD* :</p>
+					<p>
+						<input type="password" name="pass" placeholder="Password" class="pass" id="pass">
+						<input type="password" name="pass" placeholder="Conform Password" class="pass" id="chkpass">
+                    </p>
+					<span id="passmsg" class="spn"> </span>
+					
+					<p class="name">DATE OF BIRTH* :</p>
+					<p>
+						<input type="text" placeholder="MM" id="month" class="month">
+						<input type="text" placeholder="DD" id="date" class="month">
+						<input type="text" placeholder="YYYY" id="year" class="year">
+                    </p>
+					<span id="dob" class="spn"> </span>
+					
+					<p><input type="submit" name="sb" value="SUBMIT" class="sub"></p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript\form.js"> </script>
+</body>
+</html>
